@@ -6,6 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -27,22 +29,35 @@ h1 {letter-spacing: 6px}
 	float: left;
 	clear: right;
 	margin-left: 8.2%;
-	margin-bottom: 200px;
+	margin-bottom: 150px;
 }
 .main_text{
 	padding-top: 3px;
 	margin-right: 150px;
 }
 
-h3 {
+h2 {
 	text-decoration: none;
 	line-height: 1.5;
 	word-spacing: 1px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	color: #333333;
+	color: #808080;
 
 }
+
+h3 {
+	text-decoration: none;
+	line-height: 1.26;
+	word-spacing: 1px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #333333;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto}
 
 }
 </style>
@@ -51,26 +66,25 @@ h3 {
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
+<img id="home" src="media/signature.png" width="500" alt="signature" class="sig_center">
 
-	<img id="home" src="media/signature.png" width="500" alt="signature" class="sig_center">
-	<!-- Header -->
+<!-- Header -->
 	<header class="w3-panel w3-center w3-opacity">
 	  <div class="w3-padding-32">
 	    <div class="w3-bar w3-xlarge" style="padding-top: 20px; padding-bottom: 50px">
 	      <a href="#home" class="w3-bar-item w3-button" style="width:150px">Home</a>
+	      <a href="#interests" class="w3-bar-item w3-button" style="width:150px">Interests</a>
 	      <a href="#projects" class="w3-bar-item w3-button" style="width:150px">Projects</a>
-	      <a href="#writing" class="w3-bar-item w3-button" style="width:150px">Writing</a>
-	      <a href="#" class="w3-bar-item w3-button" style="width:150px">Research</a>
-	      <a href="#" class="w3-bar-item w3-button" style="width:150px">Contact</a>
+	      <a href="#research" class="w3-bar-item w3-button" style="width:150px">Research</a>
+	      <a href="#contact" class="w3-bar-item w3-button" style="width:150px">Contact</a>
 	    </div>
 	  </div>
 	</header>
 
-	<img class="headshot" src="media/headshot-round.png" alt="headshot" style="width:250px; height:250px; margin-right: 50px;">
+<img class="headshot" src="media/headshot-round.png" alt="headshot" id="home" style="width:250px; height:250px; margin-right: 50px;">
 
-	<div class="main_text">
-		<h3>
-		<p>
+<div class="main_text">
+<h3><p>
 	 	Hi, I'm Alayna! <br><br>
 	 	I'm an AI enthusiast intersting in creating ethical algorithms and aligning human and machine values. <br><br>
 	 	Currently working as a data scientist in IBM's public sector practice, I make predictive models for fraud detection, improve natural language processing models for job matching, and create tools to help other data scientists use AI ethically.<br><br>
@@ -78,17 +92,71 @@ h3 {
 		<br><br>
 		Check out my <a href="media/Resume.pdf">resume</a>
  		or shoot me an <a href="mailto:aakennedy3696 at gmail.com">email</a> if you'd like to know more! 
-		<br><br><br></p> </h3>
-	</div>	
+</p> </h3>
+</div>
+
+<div class="w3-white" id="interests">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+    <h2 class="w3-wide w3-center">INTERESTS</h2>
+    <br><br><br>
+    <div class="row text-center">
+    		<div class="col-sm-3" style="padding-right: 50px">
+		      <i class="fa fa-puzzle-piece w3-xxxlarge w3-opacity-max"></i> 
+		      <p><strong><br>Machine Learning</strong></p>
+		      <p>I've always been driven by curiosity. It's what drew me to engineering, and what made me fall in love with machine learning after a summer fellowship studying neural networks. I delight in the cleverness, context, and artistry of using a well-implemented model to solve a complex problem. </p>
+		 	</div>
+		  	<div class="col-sm-3" style="padding-right: 50px">
+		      <i class="fa fa-balance-scale w3-xxxlarge w3-opacity-max"></i>
+		      <p><strong><br>AI Ethics</strong></p>
+		      <p>Concerned with the dearth of AI safety and ethics work, I wrote my undergraduate thesis on a solution to the AI value alignment problem. Since then, I've read a ton of AI ethics work, developed an AI ethics strategy for IBM’s public sector practice, and implemented a tool to help data scientists use AI ethically.</p>
+		  	</div>
+		  	<div class="col-sm-3" style="padding-right: 50px">
+			   <i class="fas fa-scroll w3-xxxlarge w3-opacity-max"></i>
+			      <p><strong><br>Policy</strong></p>
+			      <p>During college, I took a philosophy of technology policy class and was immediately hooked. Since then, I’ve been fascinated by the intersection of technology, philosophy, and governance. Since moving to D.C. I’ve become a regular at every think tank and policy discussion surrounding AI. </p>
+			</div>
+			<div class="col-sm-3"style="padding-right: 50px">
+			      <i class="fas fa-lightbulb w3-xxxlarge w3-opacity-max"></i>
+			      <p><strong><br>Effective Altruism</strong></p>
+			      <p>My two most important core values are meaningful work and intellectual engagement; I found both in Effective Altruism community. Like most EA’s, I’m passionate about advocating for important causes like AI policy and about doing the right thing for the long-term future of humanity. </p>
+			</div>
+		</div>
+    </div>
+ </div> 
+
+
 
 <div class="w3-black" id="projects">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">PROJECTS</h2>
-      <p class="w3-opacity w3-center"><i>I'm passionate about...</i></p><br>
+      		<div class="row">
+				  <div class="column" style="background-color:#1a1a1a; padding-left: 15px; padding-bottom: 15px">
+				  	<img src="media/CBG.png" width="120" class="displayed" style="padding-top: 25px">
+				    <h2 class="w3-xlarge">AI Governance Writer</h2>
+				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				  </div>
+				  <div class="column" style="background-color:#242424;padding-left: 15px; padding-bottom: 15px">
+				    <img src="media/dol.png" width="120" class="displayed" style="padding-top: 25px">
+				    <h2 class="w3-xlarge">NLP Developer</h2>
+				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column" style="background-color:#363636; padding-left: 15px; padding-bottom: 15px">
+				    <img src="media/watson.png" width="120" class="displayed" style="padding-top: 25px">
+				    <h2 class="w3-xlarge">AI Ethics Strategist</h2>
+				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				  </div>
+				  <div class="column" style="background-color:#474747; padding-left: 15px; padding-bottom: 15px">
+				    <img src="media/ndl.png" width="120" class="displayed" style="padding-top: 25px">
+				    <h2 class="w3-xlarge">Board Member</h2>
+				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				  </div>
+				</div>
     </div>
   </div>  
 
-  <div class="w3-white" id="writing">
+  <div class="w3-white" id="research">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">WRITING</h2>
       <p class="w3-opacity w3-center"><i>I've got a lot of places I've written<i></p><br>
