@@ -54,10 +54,37 @@ h3 {
 	color: #333333;
 }
 
+
+
 IMG.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto}
+
+.card {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+   	 	margin-right: auto;
+    }
+    .card .img-top {
+    	width: 150px;
+    	height: 150px;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        display: inline;
+        width: 150px;
+    	height: 150px;
+    }
+
+
 
 }
 </style>
@@ -71,7 +98,7 @@ IMG.displayed {
 <!-- Header -->
 	<header class="w3-panel w3-center w3-opacity">
 	  <div class="w3-padding-32">
-	    <div class="w3-bar w3-xlarge" style="padding-top: 20px; padding-bottom: 50px">
+	    <div class="w3-bar w3-xlarge" style="padding-bottom: 50px">
 	      <a href="#home" class="w3-bar-item w3-button" style="width:150px">Home</a>
 	      <a href="#interests" class="w3-bar-item w3-button" style="width:150px">Interests</a>
 	      <a href="#projects" class="w3-bar-item w3-button" style="width:150px">Projects</a>
@@ -133,50 +160,107 @@ IMG.displayed {
 				  <div class="column" style="background-color:#1a1a1a; padding-left: 15px; padding-bottom: 15px">
 				  	<img src="media/cbg.png" width="120" class="displayed" style="padding-top: 25px">
 				    <h2 class="w3-xlarge">AI Governance Writer</h2>
-				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				    <p>I worked with IBM’s internal government think tank to publish two blogs and a longer report on the effects of AI in the government industry. With the Partnership for Public Service, we hosted roundtables of CXOs from across federal agencies to discuss AI policy and adoption. I took notes at these events and used the discussion as the basis for the blogs I wrote. I learned a great deal about the challenges government agencies face in the day-to-day work of implementing AI tools and policies in these discussions!  </p>
 				  </div>
-				  <div class="column" style="background-color:#242424;padding-left: 15px; padding-bottom: 15px">
+				  <div class="column" style="background-color:#262626;padding-left: 15px; padding-bottom: 15px">
 				    <img src="media/DOL.png" width="120" class="displayed" style="padding-top: 25px">
 				    <h2 class="w3-xlarge">NLP Developer</h2>
-				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				    <p>As a part of an IBM project, I worked on a tool that uses Natural Language Processing (NLP) to perform job matching of employees across government agencies. Government desperately needs to retool their workforce to address emerging technology needs, but they can’t find people to fill positions in the missing middle of human-computer interaction. Initially developed for the Department of Labor, the prototype I helped develop would help all government agencies match job descriptions of new positions to internal resumes, using personality insights and conceptual dictionaries. </p>
 				  </div>
 				</div>
 				<div class="row">
-				  <div class="column" style="background-color:#363636; padding-left: 15px; padding-bottom: 15px">
+				  <div class="column" style="background-color:#333333; padding-left: 15px; padding-bottom: 15px">
 				    <img src="media/watson.png" width="120" class="displayed" style="padding-top: 25px">
 				    <h2 class="w3-xlarge">AI Ethics Strategist</h2>
-				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				    <p>With one of my fellow analysts, I helped launch an initiative in IBM’s public sector practice to address issues of AI ethics and bias. We read copious amounts of papers on AI governance and ethics and created a rubric for data analysts to use when developing models. Our goal was to identify which algorithms were higher risk (an unexplainable neural net being riskier than a decision tree), and what types of data required a closer look by a social scientist (race information, gender, etc.) </p>
 				  </div>
-				  <div class="column" style="background-color:#474747; padding-left: 15px; padding-bottom: 15px">
+				  <div class="column" style="background-color:#404040; padding-left: 15px; padding-bottom: 15px">
+				    <img src="media/dod.png" width="120" class="displayed" style="padding-top: 25px">
+				    <h2 class="w3-xlarge">AI Newsletter Author</h2>
+				    <p>I work with the leader of IBM’s Defense and Intelligence (D&I) practice to inform him about the specific AI ethics and bias concerns that exist within the D&I community. I love reading about this topic, and I have a knack for summarizing information, so I  started writing a weekly newsletter about developments in the AI research, policy, and ethics space that were relevant to the D&I industry. The newsletter was disseminated internally within IBM, as well as externally to our DoD and Intelligence Agency clients. </p>
+				  </div>
+				  <div class="column" style="background-color:#4d4d4d; padding-left: 15px; padding-bottom: 15px">
 				    <img src="media/ndl.png" width="120" class="displayed" style="padding-top: 25px">
 				    <h2 class="w3-xlarge">Board Member</h2>
-				    <p>Working with IBM's Government Think Tank and the Partnership for Public Service, </p>
+				    <p>In college, I helped start Penn State’s first data science organization, which taught introductory Python to students and partnered with industry sponsors like Nestle and Disney on data science projects. I served as a lead on a 3-month Python bootcamp for new members, as well as leading teams during our annual data science case competitions. As the only woman on the board, I was especially passionate about recruiting and retaining other undergraduate women to our organization, since I firmly believe that the tech world needs more diversity to reach its full potential. </p>
 				  </div>
 				</div>
     </div>
   </div>  
 
   <div class="w3-white" id="research">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">WRITING</h2>
-      <p class="w3-opacity w3-center"><i>I've got a lot of places I've written<i></p><br>
+    <div class="w3-container w3-content w3-padding-64" style="max-width:750px">
+      <h2 class="w3-wide w3-center">RESEARCH</h2>
+      	<div class="row">
+      		<div class="col-sm-3" style="padding-top: 45px">
+      			<div class="card">
+			        <img src="media/story1.png" style="width:150px; height: 150px">
+			        <img src="media/story2.png" class="img-top">
+    			</div>
+      		</div>
+      		<div class="col-lrg-4" style="padding-bottom: 77px; max-width: 750px">
+			      <p class="w3-large" style="text-align: right; padding-left: 200px"><strong><br>How stories can solve AI value alignment</strong><br><br>
+			      	My undergraduate thesis provides a proof of concept for how NLP techniques like plot trees and sentiment graphs can form the basis for a value aligned intelligence agent. 
+			      </p>
+			      <p class="w3-small" style="text-align: right; padding-left: 200px;">A. Kennedy. <i>Using Computational Narratology to Solve the Artificial Intelligence Value Alignment Problem.</i> Honors Thesis. The Pennsylvania State University, 2018. Web.</p>
+
+			</div>
+			<div class="col-sm-3" style="padding-top: 45px">
+      			<div class="card">
+			        <img src="media/walking.png" style="width:150px; height: 150px">
+			        <img src="media/walking.gif" class="img-top">
+    			</div>
+      		</div>
+      		<div class="col-lrg-4" style="padding-bottom: 77px; max-width: 750px">
+			      <p class="w3-large" style="text-align: right; padding-left: 200px"><strong><br>Determining walking speed with neural nets</strong><br><br>
+			      	On a summer NSF fellowship, I assessed the accuracy and computational cost of a variety of machine learning classificaiton architectures to determine which would be the most feasible to use in a prosthetic device.
+			      </p>
+			      <p class="w3-small" style="text-align: right; padding-left: 200px;">A. Kennedy and R. Lewis. "Optimization of Neural Network Architecture for Biomechanic Classification Tasks with Electromyogram Inputs," <i>International Journal of Artificial Intelligence & Applications</i>, vol. 7, no. 5, p. 1-16, 2016.</p>
+			</div>
+			<div class="col-sm-3" style="padding-top: 45px">
+      			<div class="card">
+			        <img src="media/conv.png" style="width:150px; height: 150px">
+			        <img src="media/conv.gif" class="img-top">
+    			</div>
+      		</div>
+      		<div class="col-lrg-4" style="padding-bottom: 77px; max-width: 750px">
+			      <p class="w3-large" style="text-align: right; padding-left: 200px"><strong><br>Convolutional network video compression</strong><br><br>
+			      	As an undergraduate researcher, I worked in a computer science lab to create a convolutional/deconvolutional neural network to compress videos.
+			      </p>
+			      <p class="w3-small" style="text-align: right; padding-left: 200px;">Research Assistant to Dr. Lee Giles at the Intelligent Information Systems Research Laboratory. Oct. 2016 - January 2018. </p>
+
+			</div>
+		</div>
     </div>
   </div>  
 <!-- End Page Content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" id="contact"> 
+	<h2 class="w3-wide w3-center">CONTACT</h2>
+	<div class="row">
+		<div class="col-sm-3" style="padding-top: 45px; margin-left: 20%; padding-right: 0px">
+			<div class="card">
+		        <img src="media/me.png" style="width:150px; height: 150px">
+		        <img src="media/me2.png" class="img-top">
+	    	</div>
+	    </div> 
+	    <div class="col-sm-4" style="padding-bottom: 50px">
+			<p class="w3-large" style="text-align: left"><br>Thanks for reaching out! I'm happy to respond to questions about my work, comments on AI, or any other inqueries. I'd love to hear from you!<br><br> Email me @ <b>aakennedy3696 at gmail.com </b> or click one of the links below.<br></p>
+		</div>
+	</div>
+    
 	<a href="mailto:aakennedy3696 at gmail.com"> 
-		<i class="fa fa-envelope w3-hover-opacity"></i></a>
+		<i class="fa fa-envelope w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
   	<a href="https://github.com/alaynakennedy"> 
-  		<i class="fa fa-github w3-hover-opacity"></i></a>
+  		<i class="fa fa-github w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
   	<a href="https://twitter.com/AlaynaKennedy18"> 
-  		<i class="fa fa-twitter w3-hover-opacity"></i></a>
+  		<i class="fa fa-twitter w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
   	<a href="https://www.linkedin.com/in/alayna-kennedy/"> 
-  		<i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  		<i class="fa fa-linkedin w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
   	<a href="https://stackoverflow.com/users/6616247/alayna-kennedy"> 
-  		<i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
+  		<i class="fa fa-stack-overflow w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
   	<a href="media/Resume.pdf"> 
-		<i class="fa fa-file w3-hover-opacity"></i></a>
+		<i class="fa fa-file w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
 </footer>
