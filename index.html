@@ -1,302 +1,79 @@
 <!DOCTYPE html>
 <html>
-<title>Alayna Kennedy </title>
-<link rel="icon" type="image/png" href="media/icon.png">
-
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-body,h1, h3 {font-family: 'Montserrat', sans-serif;}
-h1 {letter-spacing: 6px}
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
 .header {
   padding: 10px 16px;
   background: #555;
   color: #f1f1f1;
 }
 
-/* Page content */
 .content {
   padding: 16px;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 102px;}
-
-.w3-row-padding img {margin-bottom: 12px}
-
-.sig_center {
-  display: block;
-  margin-left: 31%;
-  margin-right: auto;
-  margin-top: 50px;
-  width: 40%;}
-
-.headshot {
-	float: left;
-	clear: right;
-	margin-left: 8.2%;
-	margin-bottom: 150px;
+  padding-top: 102px;
 }
-.main_text{
-	padding-top: 3px;
-	margin-right: 150px;
-}
-
-h2 {
-	text-decoration: none;
-	line-height: 1.5;
-	word-spacing: 1px;
-	font-family: 'Montserrat', sans-serif;
-	color: #808080;
-
-}
-h3 {
-	text-decoration: none;
-	line-height: 1.26;
-	word-spacing: 1px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	color: #333333;
-}
-
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto}
-
-.card {
-        width: 150px;
-        height: 150px;
-        position: relative;
-        display: inline-block;
-        margin-left: auto;
-   	 	margin-right: auto;
-    }
-    .card .img-top {
-    	width: 150px;
-    	height: 150px;
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    .card:hover .img-top {
-        display: inline;
-        width: 150px;
-    	height: 150px;
-    }
-}
-
 </style>
 </head>
-<script src="cmy-website.js"> </script>
 <body>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-<img id="home" src="media/signature.png" width="500" alt="signature" class="sig_center">
+<div class="top-container">
+  <h1>Scroll Down</h1>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
 
 <div class="header" id="myHeader">
   <h2>My Header</h2>
 </div>
 
-<!-- Header -->
-	<!-- 
-	<header class="w3-panel w3-center w3-opacity">
-	  <div class="w3-padding-32">
-	    <div class="w3-bar w3-xlarge" style="padding-bottom: 50px">
-	      <a href="#home" class="w3-bar-item w3-button" style="width:150px">Home</a>
-	      <a href="#interests" class="w3-bar-item w3-button" style="width:150px">Interests</a>
-	      <a href="#projects" class="w3-bar-item w3-button" style="width:150px">Projects</a>
-	      <a href="#research" class="w3-bar-item w3-button" style="width:150px">Research</a>
-	      <a href="#media" class="w3-bar-item w3-button" style="width:150px">Media</a>
-	      <a href="#contact" class="w3-bar-item w3-button" style="width:150px">Contact</a>
-	    </div>
-	  </div>
-	</header> 
-	-->
-
-<img class="headshot" src="media/headshot.jpg" alt="headshot" id="home" style="width:375px; height:500px; margin-right: 50px;">
-
-<div class="main_text">
-<h3><p>
-	 	Hi, I'm Alayna! <br><br>
-	 	I'm an AI ethics consultant with experience in industry, policy, and academia. My interests and work focus on the ways the private sector is  implementing "tech ethics" policies and procedures. <br><br>
-	 	Currently pursuing a master's in Science and Technology in Society at the <a href="https://www.ed.ac.uk/" style="color:#5e84c1">University of Edinburgh</a>, I'm studying the power dynamics and social worlds of industry, academia, and government with regards to the emerging tech ethics ecosystem. Before that, I worked on <a href="https://www.ibm.com/uk-en/artificial-intelligence/ethics" style="color:#5e84c1">IBM's AI Ethics Board</a> to create tools to help other data scientists use AI ethically.<br><br>
-	 	I graduated from <a href="https://www.psu.edu/" style="color:#5e84c1">Penn State University</a> with a Bachelors in <a href="https://www.esm.psu.edu/" style="color:#5e84c1">Engineering Science.</a> I also wrote and published an <a href="https://honors.libraries.psu.edu/catalog/5668akk5244" style="color:#5e84c1">undergraduate honors thesis</a> on using stories to teach computers human values.   
-		<br><br>
-		Check out my <a href="media/Resume.pdf" style="color:#5e84c1">resume</a>
- 		or shoot me an <a href="mailto:alayna.a.kennedy at gmail.com" style="color:#5e84c1">email</a> if you'd like to know more! 
-</p> </h3>
+<div class="content">
+  <h3>On Scroll Sticky Header</h3>
+  <p>The header will stick to the top when you reach its scroll position.</p>
+  <p>Scroll back up to remove the sticky effect.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 </div>
 
-<div class="w3-white" id="interests">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
-    <h2 class="w3-wide w3-center">INTERESTS</h2>
-    <br><br><br>
-    <div class="row text-center">
-    		<div class="col-sm-3" style="padding-right: 50px">
-		      <i class="fa fa-puzzle-piece w3-xxxlarge w3-opacity-max"></i> 
-		      <p><strong><br>Industry Trends in Tech Ethics</strong></p>
-		      <p>In my 3 years at IBM, worked with the IBM AI ethics board on corporate research and education initiatives about tech ethics for design, bias mitigation techniques, and many other corporate AI ethics trends. Even after leaving IBM, I'm still interested in the ways companies attempt to implement tech ethics through a framework of corporate social responsibility. </p>
-		 	</div>
-		  	<div class="col-sm-3" style="padding-right: 50px">
-		      <i class="fa fa-balance-scale w3-xxxlarge w3-opacity-max"></i>
-		      <p><strong><br>Power & AI</strong></p>
-		      <p>My master's research, informed by my past industry experience, examines the different social worlds of industry, government, and academia and how they interact and compete within the realm of tech ethics. I am particularly concerned with questions of power and the political economy of digital technology. </p>
-		  	</div>
-		  	<div class="col-sm-3" style="padding-right: 50px">
-			   <i class="fas fa-scroll w3-xxxlarge w3-opacity-max"></i>
-			      <p><strong><br>Tech & Society</strong></p>
-			      <p>As an undergraduate, I studied engineering and machine learning. As a current master's student, I'm focusing on the sociology of technology - how society and technology co-create each other, and the complex ways that they interact. I'm interested in the social impacts of digitial technologies and mitigating harmful societal effects of emerging tech. </p>
-			</div>
-			<div class="col-sm-3"style="padding-right: 50px">
-			      <i class="fas fa-lightbulb w3-xxxlarge w3-opacity-max"></i>
-			      <p><strong><br>Engagement with the Tech Ethics Community</strong></p>
-			      <p>Tech ethics, as an emerging field, relies on community and activism. I've been involved with community projects with All Tech is Human, the Montreal AI Ethics Institute, and the organizing group No Tech for Tyrants. Organzing and supporting the community is an important part of my work.</p>
-			</div>
-		</div>
-    </div>
- </div> 
+<script>
+window.onscroll = function() {myFunction()};
 
-<div class="w3-black" id="projects">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">PROJECTS</h2>
-      		<div class="row">
-				  <div class="column" style="background-color:#1a1a1a; padding-left: 15px; padding-bottom: 15px">
-				  	<img src="media/ei.jpg" width="120" class="displayed" style="padding-top: 25px">
-				    <h2 class="w3-xlarge">AI Ethics Expert</h2>
-				    <p>Ethical Intelligence is a group that works with tech entrepreneurs to understand the importance of ethics in AI development and usage. I've been involved in their work as an expert advisor and governance consultant. I've worked with the ethical intelligence team on value aligned design of technology and on implementing an ethics maturity continuum for startup companies. </p>
-				  </div>
-				  <div class="column" style="background-color:#262626;padding-left: 15px; padding-bottom: 15px">
-				    <img src="media/atih.jpg" width="120" class="displayed" style="padding-top: 25px">
-				    <h2 class="w3-xlarge">Business Case for AI Ethics</h2>
-				    <p>With the group <a href="https://alltechishuman.org/" style="color:#5e84c1">All Tech is Human</a>, I authored a report on the ways that AI ethics is good for both consumers and for businesses. I led a team of other experts to edit and finalize <a href="https://www.businesscaseforaiethics.com/" style="color:#5e84c1">the final report</a>, which was released this past year. I've been involved in work with organizing the tech ethics community as a part of All Tech is Human. 
-				  </div>
-				</div>
-				<div class="row">
-				  <div class="column" style="background-color:#333333; padding-left: 15px; padding-bottom: 15px">
-				    <img src="media/ibm.jpg" width="120" class="displayed" style="padding-top: 25px">
-				    <h2 class="w3-xlarge">IBM AI Ethics</h2>
-				    <p> I worked with IBM’s internal government think tank to publish <a href="http://www.businessofgovernment.org/blog/how-can-ai-help-government-improve" style="color:#5e84c1">two</a> <a href="http://www.businessofgovernment.org/blog/how-artificial-intelligence-can-help-agencies-improve-performance" style="color:#5e84c1">blogs</a> and a <a href="http://www.businessofgovernment.org/sites/default/files/More%20Than%20Meets%20AI.pdf" style="color:#5e84c1">longer report</a> on the effects of AI in the government industry. With the <a href= "https://ourpublicservice.org/" style="color:#5e84c1">Partnership for Public Service</a>, we hosted roundtables of CXOs from across federal agencies to discuss AI policy and adoption. I also launched an initiative in IBM’s public sector practice to address issues of AI ethics and bias. </p>
-				  </div>
-				 
-				  <div class="column" style="background-color:#404040; padding-left: 15px; padding-bottom: 15px">
-				    <img src="media/ndl.png" width="120" class="displayed" style="padding-top: 25px">
-				    <h2 class="w3-xlarge">Board Member</h2>
-				    <p>In college, I helped start <a href="http://www.nittanydatalabs.org/" style="color:#5e84c1">Nittany Data Labs</a>, Penn State’s first data science organization, which taught introductory Python to students and partnered with industry sponsors like Nestle and Disney on data science projects. I served as a lead on a 3-month <a href="https://www.datacamp.com/courses/intro-to-python-for-data-science" style="color:#5e84c1">Python bootcamp</a> for new members, as well as leading teams during our annual data science case competitions. As the only woman on the board, I was especially passionate about recruiting and retaining other undergraduate women to our organization, since I firmly believe that the tech world needs more diversity to reach its full potential. </p>
-				  </div>
-				</div>
-    </div>
-  </div>  
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
 
-  <div class="w3-white" id="research">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:750px">
-      <h2 class="w3-wide w3-center">RESEARCH</h2>
-      	<div class="row">
-      		<div class="col-sm-3" style="padding-top: 45px">
-      			<div class="card">
-			        <img src="media/neurips1.png" style="width:150px; height: 150px">
-			        <img src="media/neurips2.jpg" class="img-top">
-    			</div>
-      		</div>
-      		<div class="col-lrg-4" style="padding-bottom: 77px; max-width: 750px">
-			      <p class="w3-large" style="text-align: right; padding-left: 200px"><strong><br><a href="media/auditinggovtai.pdf" style="color:#5e84c1">
-			      Auditing Government AI</a></strong><br><br>
-			      	At IBM, my work in the public sector practice in Washington DC inspired me to start a public sector AI ethics team. We created a risk assessment questionnaire for public sector practices and published a paper about our work in the NeurIPS 2020 workshop on ethical AI systems. 
-			      </p>
-			      <p class="w3-small" style="text-align: right; padding-left: 200px;">A. Kennedy. <i>Auding Government AI: How to assess ethical vulnerability in machine learning</i> NeurIPS. Ethical AI workshop, 2020.</p>
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
-			</div>
-      		<div class="col-sm-3" style="padding-top: 45px">
-      			<div class="card">
-			        <img src="media/story1.png" style="width:150px; height: 150px">
-			        <img src="media/story2.png" class="img-top">
-    			</div>
-      		</div>
-      		<div class="col-lrg-4" style="padding-bottom: 77px; max-width: 750px">
-			      <p class="w3-large" style="text-align: right; padding-left: 200px"><strong><br><a href="https://honors.libraries.psu.edu/catalog/5668akk5244" style="color:#5e84c1">How stories can solve AI value alignment</a></strong><br><br>
-			      	My undergraduate thesis provides a proof of concept for how NLP techniques like plot trees and sentiment graphs can form the basis for a value aligned intelligence agent. 
-			      </p>
-			      <p class="w3-small" style="text-align: right; padding-left: 200px;">A. Kennedy. <i>Using Computational Narratology to Solve the Artificial Intelligence Value Alignment Problem.</i> Honors Thesis. The Pennsylvania State University, 2018. Web.</p>
-
-			</div>
-			<div class="col-sm-3" style="padding-top: 45px">
-      			<div class="card">
-			        <img src="media/walking.png" style="width:150px; height: 150px">
-			        <img src="media/walking.gif" class="img-top">
-    			</div>
-      		</div>
-      		<div class="col-lrg-4" style="padding-bottom: 77px; max-width: 750px">
-			      <p class="w3-large" style="text-align: right; padding-left: 200px"><strong><br><a href="http://aircconline.com/ijaia/V7N5/7516ijaia01.pdf" style="color:#5e84c1">Determining walking speed with neural nets</a></strong><br><br>
-			      	On a summer NSF fellowship, I assessed the accuracy and computational cost of a variety of machine learning classificaiton architectures to determine which would be the most feasible to use in a prosthetic device.
-			      </p>
-			      <p class="w3-small" style="text-align: right; padding-left: 200px;">A. Kennedy and R. Lewis. "Optimization of Neural Network Architecture for Biomechanic Classification Tasks with Electromyogram Inputs," <i>International Journal of Artificial Intelligence & Applications</i>, vol. 7, no. 5, p. 1-16, 2016.</p>
-			</div>
-			<div class="col-sm-3" style="padding-top: 45px">
-      			<div class="card">
-			        <img src="media/conv.png" style="width:150px; height: 150px">
-			        <img src="media/conv.gif" class="img-top">
-    			</div>
-      		</div>
-      		<div class="col-lrg-4" style="padding-bottom: 77px; max-width: 750px">
-			      <p class="w3-large" style="text-align: right; padding-left: 200px"><strong><br><a href="http://iis.ist.psu.edu/" style="color:#5e84c1">Convolutional network video compression</a></strong><br><br>
-			      	As an undergraduate researcher, I worked in a computer science lab to create a convolutional/deconvolutional neural network to compress videos.
-			      </p>
-			      <p class="w3-small" style="text-align: right; padding-left: 200px;">Research Assistant to Dr. Lee Giles at the Intelligent Information Systems Research Laboratory. Oct. 2016 - January 2018. </p>
-
-			</div>
-		</div>
-    </div>
-
-  </div>  
-<!-- End Page Content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" id="contact"> 
-	<h2 class="w3-wide w3-center">CONTACT</h2>
-	<div class="row">
-		<div class="col-sm-3" style="padding-top: 45px; margin-left: 20%; padding-right: 0px">
-			<div class="card">
-		        <img src="media/me.PNG" style="width:150px; height: 150px">
-		        <img src="media/me2.png" class="img-top">
-	    	</div>
-	    </div> 
-	    <div class="col-sm-4" style="padding-bottom: 50px">
-			<p class="w3-large" style="text-align: left"><br>Thanks for reaching out! I'm happy to respond to questions about my work, comments on AI, or any other inqueries. I'd love to hear from you!<br><br> Email me at <b>alayna.a.kennedy@gmail.com </b> or click one of the links below.<br></p>
-		</div>
-	</div>
-    
-	<a href="mailto:alayna.a.kennedy at gmail.com"> 
-		<i class="fa fa-envelope w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
-  	<a href="https://github.com/alaynakennedy"> 
-  		<i class="fa fa-github w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
-  	<a href="https://twitter.com/Alayna__Kennedy"> 
-  		<i class="fa fa-twitter w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
-  	<a href="https://www.linkedin.com/in/alayna-kennedy/"> 
-  		<i class="fa fa-linkedin w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
-  	<a href="https://stackoverflow.com/users/6616247/alayna-kennedy"> 
-  		<i class="fa fa-stack-overflow w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
-  	<a href="media/Resume.pdf"> 
-		<i class="fa fa-file w3-hover-opacity w3-xxxlarge" style="padding-right: 20px; padding-left: 20px "></i></a>
-</footer>
+</body>
+</html>
