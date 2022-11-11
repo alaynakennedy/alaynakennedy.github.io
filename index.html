@@ -18,6 +18,28 @@
 
 body,h1, h3 {font-family: 'Montserrat', sans-serif;}
 h1 {letter-spacing: 6px}
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;}
+
 .w3-row-padding img {margin-bottom: 12px}
 
 .sig_center {
@@ -86,12 +108,16 @@ IMG.displayed {
 
 </style>
 </head>
-<script src="code/grid.js"> </script>
+<script src="code/my-website.js"> </script>
 <body>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 <img id="home" src="media/signature.png" width="500" alt="signature" class="sig_center">
+
+<div class="header" id="myHeader">
+  <h2>My Header</h2>
+</div>
 
 <!-- Header -->
 	<!-- 
