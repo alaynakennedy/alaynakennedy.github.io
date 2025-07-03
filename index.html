@@ -93,7 +93,7 @@
             display: flex;
             align-items: center;
             padding: 8rem 0 4rem 0;
-            background: linear-gradient(135deg, var(--cream) 0%, var(--warm-white) 100%);
+            background: #E8E5E0;  /* Soft gray from the tiger painting */
             position: relative;
             overflow: hidden;
         }
@@ -105,14 +105,14 @@
             right: -20%;
             width: 60%;
             height: 150%;
-            background: radial-gradient(circle, var(--light-green) 0%, transparent 70%);
-            opacity: 0.3;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+            opacity: 0.5;
         }
 
         .hero-content {
             width: 100%;
             /* TEXT HORIZONTAL POSITION - Change this number to move text left/right */
-            padding-left: 66px;  /* Increase to move text right, decrease to move left */
+            padding-left: 200px;  /* Increase to move text right, decrease to move left */
             position: relative;
             z-index: 1;
         }
@@ -149,10 +149,10 @@
             z-index: 2;
             width: 300px;
             height: 300px;
-            /* HAWK VERTICAL POSITION - Change this number to move hawk up/down */
-            top: 44px;  /* Negative = higher, Positive = lower */
-            /* HAWK HORIZONTAL POSITION - Keep at 0 for left-justified */
-            left: -29px;  /* Keep this at 0 for left edge */
+            /* TIGER VERTICAL POSITION - Change this number to move tiger up/down */
+            top: -55px;  /* Negative = higher, Positive = lower */
+            /* TIGER HORIZONTAL POSITION - Keep at 0 for left-justified */
+            left: 0;  /* Keep this at 0 for left edge */
             transform: translateY(-50%);
         }
 
@@ -591,7 +591,7 @@
                 <h1 class="first-name">ALAYNA</h1>
                 <h1 class="last-name">KENNEDY</h1>
                 <div class="bird-image">
-                    <img src="media/hawk.png" alt="Ink hawk" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="media/tiger.png" alt="Ink tiger" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
             </div>
             <p class="tagline">AI Governance Researcher & Writer</p>
