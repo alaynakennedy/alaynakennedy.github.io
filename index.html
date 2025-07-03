@@ -111,7 +111,8 @@
 
         .hero-content {
             width: 100%;
-            padding-left: calc(3rem + 150px);  /* Added 150px to move text right */
+            /* TEXT HORIZONTAL POSITION - Change this number to move text left/right */
+            padding-left: 200px;  /* Increase to move text right, decrease to move left */
             position: relative;
             z-index: 1;
         }
@@ -148,8 +149,10 @@
             z-index: 2;
             width: 300px;
             height: 300px;
-            top: calc(45% - 100px);  /* Moved up 100 pixels */
-            left: -130px;
+            /* HAWK VERTICAL POSITION - Change this number to move hawk up/down */
+            top: -55px;  /* Negative = higher, Positive = lower */
+            /* HAWK HORIZONTAL POSITION - Keep at 0 for left-justified */
+            left: 0;  /* Keep this at 0 for left edge */
             transform: translateY(-50%);
         }
 
@@ -216,38 +219,72 @@
 
         /* Interests Section with Cards and Stats */
         .interests-section {
-            padding: 6rem 3rem;
-            background: linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%);
+            padding: 4rem 3rem 6rem 3rem;  /* Reduced top padding */
+            background: var(--cream);
+            margin-top: -40px;  /* Pull up to meet curve */
+            position: relative;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: var(--forest-green);
+            color: white;
+            padding: 5rem 0 8rem 0;  /* Extra bottom padding for curve */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-banner::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150%;  /* Wider for smoother curve */
+            height: 80px;  /* Taller curve */
+            background: var(--cream);
+            border-radius: 50% 50% 0 0;
         }
 
         .stats-container {
             display: flex;
             justify-content: center;
-            gap: 6rem;
-            margin-bottom: 4rem;
-            padding: 3rem;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            max-width: 800px;
-            margin: 0 auto 4rem;
+            align-items: center;
+            gap: 3rem;  /* Reduced gap */
+            max-width: 800px;  /* Narrower container */
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-divider {
+            width: 1px;
+            height: 60px;
+            background: rgba(255,255,255,0.3);
+            margin: 0;
         }
 
         .stat-item {
             text-align: center;
+            padding: 0 2rem;  /* Horizontal padding instead of gap */
         }
 
         .stat-item h3 {
             font-size: 3.5rem;
-            color: var(--forest-green);
-            font-weight: 700;
+            color: white;
+            font-weight: 300;
             margin: 0;
+            line-height: 1;
         }
 
         .stat-item p {
-            color: var(--sage);
-            font-size: 1rem;
-            margin-top: 0.5rem;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 300;
+            line-height: 1.3;
         }
 
         .interests-grid {
@@ -585,25 +622,30 @@
         </div>
     </section>
 
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>400+</h3>
+                <p>Clients Served<br>Since 2018</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Different<br>Industries</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3>2,200%</h3>
+                <p>Average Return<br>on Investment</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Interests Section -->
     <section class="interests-section" id="interests">
         <h2>INTERESTS</h2>
         
-        <div class="stats-container">
-            <div class="stat-item">
-                <h3>15+</h3>
-                <p>Years Experience</p>
-            </div>
-            <div class="stat-item">
-                <h3>50+</h3>
-                <p>Projects Delivered</p>
-            </div>
-            <div class="stat-item">
-                <h3>100K+</h3>
-                <p>Lives Impacted</p>
-            </div>
-        </div>
-
         <div class="interests-grid">
             <div class="interest-card">
                 <div class="interest-icon">
