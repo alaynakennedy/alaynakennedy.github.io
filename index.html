@@ -148,8 +148,8 @@
             z-index: 2;
             width: 300px;
             height: 300px;
-            top: 50%;
-            left: -150px;
+            top: 45%;  /* Moved up from 50% */
+            left: -130px;  /* Moved right from -150px */
             transform: translateY(-50%);
         }
 
@@ -329,6 +329,9 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .work-card:hover {
@@ -630,6 +633,20 @@
                 <h3>Writing and Researching</h3>
                 <p>Developing writing skills for general audiences and publishing on societal systems, making the world better, and historical contexts.</p>
             </div>
+            <div class="interest-card">
+                <div class="interest-icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <h3>Community Building</h3>
+                <p>Creating networks and fostering collaboration between technologists, policymakers, and civil society to advance responsible AI.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon">
+                    <i class="fa fa-globe"></i>
+                </div>
+                <h3>Global AI Policy</h3>
+                <p>Analyzing international approaches to AI governance and contributing to cross-border regulatory frameworks.</p>
+            </div>
         </div>
     </section>
 
@@ -637,7 +654,7 @@
     <section class="work-section" id="work">
         <h2>MY WORK</h2>
         <div class="work-grid">
-            <div class="work-card">
+            <a href="https://alltechishuman.substack.com/p/the-business-case-for-ai-ethics" class="work-card" target="_blank">
                 <div class="work-image">
                     <img src="media/ATIH_BC.png" alt="Business Case for AI Ethics">
                 </div>
@@ -645,8 +662,8 @@
                     <h3>The Business Case for AI Ethics</h3>
                     <p>A comprehensive report drawing on experiences from hundreds of ethics professionals on implementing responsible AI in industry.</p>
                 </div>
-            </div>
-            <div class="work-card">
+            </a>
+            <a href="https://ai-broader-impacts-workshop.github.io/papers/audtinggovtai.pdf" class="work-card" target="_blank">
                 <div class="work-image">
                     <img src="media/neurips.png" alt="NeurIPS Presentation">
                 </div>
@@ -654,8 +671,8 @@
                     <h3>Auditing Government AI</h3>
                     <p>Research on accountability mechanisms for AI systems in public sector applications, presented at NeurIPS workshop.</p>
                 </div>
-            </div>
-            <div class="work-card">
+            </a>
+            <a href="https://medium.com/data-science/ai-safety-ai-ethics-and-the-agi-debate-d5ffaaca2c8c" class="work-card" target="_blank">
                 <div class="work-image">
                     <img src="media/TDS.jpeg" alt="TDS Interview">
                 </div>
@@ -663,14 +680,32 @@
                     <h3>AI Safety & Ethics</h3>
                     <p>In-depth discussion on the intersection of AI safety, ethics, and practical implementation in enterprise settings.</p>
                 </div>
-            </div>
-            <div class="work-card">
+            </a>
+            <a href="https://arxiv.org/abs/2402.08101" class="work-card" target="_blank">
                 <div class="work-image">
                     <img src="media/NYC_LL144.png" alt="NYC LL 144">
                 </div>
                 <div class="work-info">
                     <h3>NYC LL 144 Analysis</h3>
                     <p>Policy analysis of New York City's groundbreaking legislation on automated employment decision tools and algorithmic bias auditing requirements.</p>
+                </div>
+            </a>
+            <div class="work-card">
+                <div class="work-image">
+                    <img src="media/placeholder5.png" alt="Project 5">
+                </div>
+                <div class="work-info">
+                    <h3>Coming Soon</h3>
+                    <p>New research and publications in AI governance and responsible technology.</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-image">
+                    <img src="media/placeholder6.png" alt="Project 6">
+                </div>
+                <div class="work-info">
+                    <h3>Coming Soon</h3>
+                    <p>Additional work in technology policy and ethics implementation.</p>
                 </div>
             </div>
         </div>
