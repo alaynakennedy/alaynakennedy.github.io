@@ -89,7 +89,7 @@
 
         /* Hero Section with Left-Justified Name */
         .hero {
-            min-height: 119vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             padding: 8rem 0 4rem 0;
@@ -111,9 +111,8 @@
 
         .hero-content {
             width: 100%;
-            /* TEXT HORIZONTAL POSITION - Change this number to move text left/right */           
-            padding-left: 390px;  /* Increase to move text right, decrease to move left */
-            padding-top: -310px;  /* Add this line - increase to move text down, decrease to move text up */
+            /* TEXT HORIZONTAL POSITION - Change this number to move text left/right */
+            padding-left: 345px;  /* Increase to move text right, decrease to move left */
             position: relative;
             z-index: 1;
         }
@@ -126,7 +125,7 @@
 
         .first-name, .last-name {
             font-family: 'Inter', sans-serif;
-            font-size: clamp(6rem, 15vw, 12rem);
+            font-size: clamp(4rem, 10vw, 8rem);
             font-weight: 600;
             color: var(--charcoal);
             letter-spacing: -0.05em;
@@ -148,24 +147,22 @@
         .bird-image {
             position: absolute;
             z-index: 2;
-            width: 700px;
-            height: 700px;
+            width: 567px;
+            height: 567px;
             /* TIGER VERTICAL POSITION - Change this number to move tiger up/down */
-            top: 270px;  /* Negative = higher, Positive = lower */
+            top: 200px;  /* Negative = higher, Positive = lower */
             /* TIGER HORIZONTAL POSITION - Keep at 0 for left-justified */
-            left: -450px;  /* Keep this at 0 for left edge */
+            left: -382px;  /* Keep this at 0 for left edge */
             transform: translateY(-50%);
         }
 
         .tagline {
-            font-size: 1.9rem;
+            font-size: 1.3rem;
             color: var(--sage);
             font-weight: 300;
             letter-spacing: 0.05em;
             margin-top: 2rem;
             margin-bottom: 3rem;
-            margin-left: 15px; 
-
         }
 
         .signature {
@@ -243,10 +240,10 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 150%;  /* Wider for smoother curve */
-            height: 80px;  /* Taller curve */
+            width: 120%;  /* Even wider for more dramatic curve */
+            height: 120px;  /* Much taller curve for archway effect */
             background: var(--cream);
-            border-radius: 50% 50% 0 0;
+            border-radius: 60% 60% 0 0;  /* More pronounced curve */
         }
 
         .stats-container {
@@ -629,18 +626,18 @@
     <section class="stats-banner">
         <div class="stats-container">
             <div class="stat-item">
-                <h3>400+</h3>
-                <p>Clients Served<br>Since 2018</p>
+                <h3>100+</h3>
+                <p>AI Products<br>Assessed</p>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-                <h3>50+</h3>
-                <p>Different<br>Industries</p>
+                <h3>9+</h3>
+                <p>Years in<br>AI Ethics</p>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-                <h3>2,200%</h3>
-                <p>Average Return<br>on Investment</p>
+                <h3>7</h3>
+                <p>Major Research<br>Projects</p>
             </div>
         </div>
     </section>
@@ -735,22 +732,22 @@
                     <p>Policy analysis of New York City's groundbreaking legislation on automated employment decision tools and algorithmic bias auditing requirements.</p>
                 </div>
             </a>
-            <div class="work-card">
+            <a href="https://sites.google.com/view/altfacct2025/" class="work-card" target="_blank">
                 <div class="work-image">
-                    <img src="media/placeholder5.png" alt="Project 5">
+                    <img src="media/altfacct.png" alt="ALT FAccT 2025">
                 </div>
                 <div class="work-info">
-                    <h3>Coming Soon</h3>
-                    <p>New research and publications in AI governance and responsible technology.</p>
+                    <h3>ALT FAccT 2025: Alternative Conference</h3>
+                    <p>Co-organized and hosted ALT FAccT 2025, an alternative conference challenging traditional AI fairness venues. Brought together 100+ researchers, practitioners, and activists to reimagine accountability in AI systems. Led an industry panel on operationalizing ethics beyond compliance frameworks.</p>
                 </div>
-            </div>
+            </a>
             <div class="work-card">
                 <div class="work-image">
-                    <img src="media/placeholder6.png" alt="Project 6">
+                    <img src="media/dissertation.png" alt="Moving Ethics Beyond Frameworks">
                 </div>
                 <div class="work-info">
-                    <h3>Coming Soon</h3>
-                    <p>Additional work in technology policy and ethics implementation.</p>
+                    <h3>Moving Ethics Beyond Frameworks</h3>
+                    <p>Authored master's dissertation in collaboration with Data & Society's AI on the Ground initiative, analyzing how industry professionals operationalize AI ethics principles in practice. Through ethnographic interviews with responsible technology professionals, developed evidence-based recommendations for implementing ethical AI governance at scale.</p>
                 </div>
             </div>
         </div>
